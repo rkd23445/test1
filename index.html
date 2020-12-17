@@ -4,29 +4,56 @@
   <meta charset="utf-8">
   <title>실전1</title>
   <style>
-    body
+    h2
     {
-      background-repeat: no-repeat;
-      background-size: cover;
+      margin:0;
     }
     #box1
     {
       border: 1px solid white;
       width: 500px;
+      height: 300px;
       background-color: white;
+      margin: 30px;
+      padding:10px;
+      margin-left: 150px;
     }
     #grid
     {
       display: grid;
-      grid-template-columns: 300px 1fr;
+      grid-template-columns: 3fr 1fr;
+    }
+    .first
+    {
+      margin:0px;
+    }
+    span
+    {
+      border: 1px solid blue;
+    }
+    .grid2
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .profile
+    {
+      border:1px solid white;
+      width: 500px;
+      height: 800px;
+      background-color: white;
+    }
+    #me
+    {
+      border-radius: 50%
     }
   </style>
 </head>
-  <body background="background.jpg">
+  <body bgcolor="black">
     <div id="box1">
-        <img src="avatar.jpg">
+        <img src="avatar.jpg" width="130px" height="130px">
       <div id="1">
-        <h1>Apple Airpods</h1>
+        <h1 class="first">Apple Airpods</h1>
         <p>
           iMac Pro is ready to turn your biggest ideads into
         <br>your greatest work.
@@ -34,9 +61,21 @@
 
       <div id="grid">
           <h2>$160</h2>
-          <img src="star.jpg" width=80%>
+          <img src="star.jpg" width="150px" height="36px">
       </div>
     </div>
+    </div>
+    <div class="profile">
+      <img src="background.jpg" width="500px" height="200px">
+      <img src="me.jpg" id="me">
+      <div class="name">
+        <h1>강민성</h1>
+        <h2>soldier</h2>
+        <div class="gird2">
+          <span>Follow</span>
+          <span>Message</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>
