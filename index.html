@@ -3,51 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>실전1</title>
-  <style>
-    h2
-    {
-      margin:0;
-    }
-    #box1
-    {
-      border: 1px solid white;
-      width: 500px;
-      height: 300px;
-      background-color: white;
-      margin: 30px;
-      padding:10px;
-      margin-left: 150px;
-    }
-    #grid
-    {
-      display: grid;
-      grid-template-columns: 3fr 1fr;
-    }
-    .first
-    {
-      margin:0px;
-    }
-    span
-    {
-      border: 1px solid blue;
-    }
-    .grid2
-    {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .profile
-    {
-      border:1px solid white;
-      width: 500px;
-      height: 800px;
-      background-color: white;
-    }
-    #me
-    {
-      border-radius: 50%
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
   <body bgcolor="black">
     <div id="box1">
@@ -65,15 +21,16 @@
       </div>
     </div>
     </div>
-    <div class="profile">
+    <div class="box2">
       <img src="background.jpg" width="500px" height="200px">
-      <img src="me.jpg" id="me">
+      <br>
+      <img src="me.jpg" id="me" width="100px" height="100px">
       <div class="name">
-        <h1>강민성</h1>
-        <h2>soldier</h2>
-        <div class="gird2">
-          <span>Follow</span>
-          <span>Message</span>
+        <h1 id="name">강민성</h1>
+        <h2 id="job">soldier</h2>
+        <div class="grid2">
+          <span class="follow">Follow</span>
+          <span class="message">Message</span>
         </div>
       </div>
     </div>
